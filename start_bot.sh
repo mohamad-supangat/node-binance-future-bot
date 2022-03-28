@@ -10,7 +10,8 @@ OPTIONS=(1 "Crypto Signal Python Webhook"
          2 "Tradingview Rest Web Server"
          3 "Loop ccxt macd"
          4 "Trading view scanner axios"
-         5 "tradingview_api.js")
+         5 "Tradingview MACD"
+         6 "Tradingview UT BOT")
 
 CHOICE=$(dialog --clear \
                 --backtitle "$BACKTITLE" \
@@ -35,8 +36,10 @@ case $CHOICE in
             tmuxp load "./tmuxp_script/TradingViewScannerAxios.yml"
             ;;
         5)
-            tmuxp load "./tmuxp_script/tradingview_api.yml"
+            tmuxp load "./tmuxp_script/tradingview/macd.yml"
             ;;
-
+        6)
+            tmuxp load "./tmuxp_script/tradingview/ut_bot.yml"
+            ;;
 esac
 
