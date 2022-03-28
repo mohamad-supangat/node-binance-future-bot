@@ -1,0 +1,35 @@
+extends layout
+
+block layout-content
+  div.p-5.container
+    div.text-center.p-5
+        div "Bismillah, cari rezeki, jangan rakus, pelan pelan yang penting stabil"
+        div Salam Profit
+
+    div.card
+        table.table
+            thead
+                tr
+                    th Time
+                    th Cause
+                    th Type
+                    th Qty
+                    th Price
+                    th Profit
+            tbody
+                each item, key in items
+                    tr
+                        td= item.time
+                        td= item.cause
+                        td= item.type
+                        td= item.qty
+                        td= item.price
+                        td= item.profit
+
+        div.card-footer
+            div.text-center.h1 Profit = #{profit}
+
+
+
+
+

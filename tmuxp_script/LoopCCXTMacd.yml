@@ -1,0 +1,9 @@
+session_name: Loop CCXT Macd
+windows:
+  - name: binance-signal-bot
+    layout: main-vertical
+    panes:
+      - node app/ccxt_macd.js
+      - node app/watch_position_and_post_take_profit.js
+      - node app/stream_market_price_and_fill_order_in_db.js
+

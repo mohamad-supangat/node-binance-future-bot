@@ -1,0 +1,31 @@
+{
+  "name": "node-binance-future-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "watch": "node stream.js",
+    "migrate:make": "knex migrate:make",
+    "migrate:up": "knex migrate:up",
+    "migrate:down": "knex migrate:down"
+  },
+  "dependencies": {
+    "@mathieuc/tradingview": "github:Mathieu2301/TradingView-API",
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.1",
+    "express": "^4.17.2",
+    "ioredis": "^4.28.5",
+    "knex": "^1.0.1",
+    "moment-timezone": "^0.5.34",
+    "multer": "^1.4.4",
+    "mysql": "^2.18.1",
+    "node-binance-api": "^0.13.1",
+    "node-telegram-bot-api": "^0.56.0",
+    "pug": "^3.0.2",
+    "redis-json": "^6.0.3",
+    "trading-indicator": "^1.0.7",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {}
+}

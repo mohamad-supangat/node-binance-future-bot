@@ -1,0 +1,8 @@
+session_name: Crypto Signal Webhook
+windows:
+  - name: binance-signal-bot
+    layout: main-vertical
+    panes:
+      - node app/web_server.js
+      - node app/watch_position_and_post_take_profit.js
+      - cd ../Crypto-Signal/app && python app.py
