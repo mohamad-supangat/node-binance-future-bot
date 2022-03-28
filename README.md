@@ -4,6 +4,7 @@ My goal is to make automatic orders and also to make automatic take profit for b
 
 
 ## Usage
+- write your config.json from variable exiting in config.js
 - install node.js, yarn, dialog, tmuxp in your computer
 - run for install node_modules
 ```sh
