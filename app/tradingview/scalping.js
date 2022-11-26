@@ -17,7 +17,7 @@ const chart = new client.Session.Chart();
 
 chart.setMarket("BINANCE:" + config.tradingview_symbol, {
   timeframe: config.tradingview_api_timeframe,
-  range: 3, // Can be positive to get before or negative to get after
+  range: 5, // Can be positive to get before or negative to get after
   // to: 1600000000,
 });
 
